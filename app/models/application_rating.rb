@@ -1,0 +1,2 @@
+class ApplicationRating < ApplicationRecord
+end

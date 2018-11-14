@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: 
+  last_name: 
+  resume: 
+  gpa: 
+  education_info: 
+  application_info: 
+
+two:
+  first_name: 
+  last_name: 
+  resume: 
+  gpa: 
+  education_info: 
+  application_info: 
