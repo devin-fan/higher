@@ -1,10 +1,10 @@
 class CreateEmployees < ActiveRecord::Migration[5.2]
   def change
     create_table :employees do |t|
-      t.String :first_name
-      t.String :last_name
-      t.String :username
-      t.String :password_digest
+      t.string :first_name
+      t.string :last_name
+      t.string :username
+      t.string :password_digest
       t.boolean :admin
       t.binary :picture
 
