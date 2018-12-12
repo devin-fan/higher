@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 2018_11_14_185530) do
   end
 
   create_table "ratings", force: :cascade do |t|
+    t.integer "applicant_id"
     t.integer "question_id"
     t.integer "score"
     t.integer "comparison_count"

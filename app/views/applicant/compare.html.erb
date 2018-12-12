@@ -1,0 +1,44 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <th>Applicant 1</th>
+          </tr>
+          <tr>
+            <td><%= @applicant1.first_name %> <%= @applicant1.last_name %> </td>
+          </tr>
+          <tr>
+            <td>GPA: <%= @applicant1.gpa %> </td>
+          </tr>
+          <tr>
+            <td>Education: <%= @applicant1.education_info %></td>
+          </tr>
+          <tr>
+            <td>Application: <%= @applicant1.application_info %></td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <th>Applicant 2</th>
+          </tr>
+          <tr>
+            <td><%= @applicant2.first_name %> <%= @applicant2.last_name %> </td>
+          </tr>
+          <tr>
+            <td>GPA: <%= @applicant2.gpa %> </td>
+          </tr>
+          <tr>
+            <td>Education: <%= @applicant2.education_info %></td>
+          </tr>
+          <tr>
+            <td>Application: <%= @applicant2.application_info %></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>

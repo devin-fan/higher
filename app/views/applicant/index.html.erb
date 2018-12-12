@@ -1,0 +1,18 @@
+<div>
+  <table>
+    <tr>
+      <th>Applicant</th>
+      <% @questions.each do |q| %>
+        <th> <%= q.question %> </th>
+      <% end %>
+    </tr>
+    <% @ratings.each do |info| %>
+      <tr>
+        <td> <%= info[:applicant].first_name %> <%= info[:applicant].last_name %> </td>
+        <% info[:ratings].each do |rating| %>
+          <td><%= rating.score %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </table>
+</div>
