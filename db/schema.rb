@@ -19,13 +19,6 @@ ActiveRecord::Schema.define(version: 2018_11_14_185530) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "applicant_ratings", force: :cascade do |t|
-    t.integer "applicant_id"
-    t.integer "rating_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "applicants", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
