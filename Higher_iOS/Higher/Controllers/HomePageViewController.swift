@@ -14,9 +14,6 @@ class HomePageViewController: UIViewController {
         super.viewDidLoad()
         
         navigationController?.navigationBar.isHidden = true
-        weak var appDelegate = (UIApplication.shared.delegate as! AppDelegate)
-        guard let context = appDelegate?.persistentContainer.viewContext else { return }
-        
         
         // Do any additional setup after loading the view.
     }

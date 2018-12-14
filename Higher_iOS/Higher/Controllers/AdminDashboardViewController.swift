@@ -10,12 +10,18 @@ import UIKit
 
 class AdminDashboardViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nameLabel.text = DataManager.shared.currentUser?.name
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func pressedLogoutButton(_ sender: Any) {
+        DataManager.shared.currentUser = nil
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
     
     /*
     // MARK: - Navigation

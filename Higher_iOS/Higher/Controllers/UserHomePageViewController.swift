@@ -20,6 +20,11 @@ class UserHomePageViewController: UIViewController {
         }
     }
     
+    @IBAction func pressedLogoutButton(_ sender: Any) {
+        DataManager.shared.currentUser = nil
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
